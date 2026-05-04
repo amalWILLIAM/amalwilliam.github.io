@@ -5,15 +5,17 @@
 }
 
 :root {
-    --primary-color: #003366;
-    --secondary-color: #0066cc;
-    --accent-color: #1a5490;
-    --dark-bg: #0a0e27;
-    --light-bg: #f5f5f5;
-    --text-dark: #333;
+    --primary-color: #2f343a;
+    --secondary-color: #6b7280;
+    --accent-color: #9ca3af;
+    --dark-bg: #1f2933;
+    --light-bg: #f4f5f7;
+    --surface-color: #ffffff;
+    --muted-surface: #eceff3;
+    --text-dark: #2b2f33;
     --text-light: #fff;
-    --border-color: #ddd;
-    --gray: #666;
+    --border-color: #d7dbe0;
+    --gray: #5f6670;
 }
 
 html {
@@ -83,7 +85,7 @@ header img {
 
 .header-text .tagline {
     font-size: 0.85rem;
-    color: #e0e0e0;
+    color: #f1f3f5;
     font-weight: 500;
 }
 
@@ -213,7 +215,7 @@ section h2::after {
 }
 
 #about {
-    background: #f9f9f9;
+    background: var(--muted-surface);
 }
 
 .about-content {
@@ -232,7 +234,7 @@ section h2::after {
 }
 
 .contact-info {
-    background: white;
+    background: var(--surface-color);
     padding: 1.6rem;
     border-radius: 8px;
     border-left: 4px solid var(--secondary-color);
@@ -264,7 +266,7 @@ section h2::after {
 }
 
 .skill-category {
-    background: white;
+    background: var(--surface-color);
     padding: 1.2rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -298,7 +300,7 @@ section h2::after {
 .skill-tag:hover {
     background: var(--secondary-color);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 119, 182, 0.2);
+    box-shadow: 0 4px 8px rgba(47, 52, 58, 0.18);
 }
 
 .education-grid {
@@ -308,7 +310,7 @@ section h2::after {
 }
 
 .education-card {
-    background: white;
+    background: var(--surface-color);
     padding: 1.6rem;
     border-radius: 8px;
     border-left: 4px solid var(--secondary-color);
@@ -335,7 +337,7 @@ section h2::after {
 }
 
 .experience-card {
-    background: white;
+    background: var(--surface-color);
     padding: 1.6rem;
     border-radius: 8px;
     border-left: 4px solid var(--secondary-color);
@@ -357,7 +359,7 @@ section h2::after {
 }
 
 .experience-card .details {
-    color: #666;
+    color: var(--gray);
     font-size: 0.9rem;
     margin-bottom: 0.8rem;
     font-weight: 500;
@@ -382,7 +384,7 @@ section h2::after {
 }
 
 #projects {
-    background: white;
+    background: var(--surface-color);
 }
 
 .project-grid {
@@ -392,7 +394,7 @@ section h2::after {
 }
 
 .project-card {
-    background: white;
+    background: var(--surface-color);
     padding: 1.8rem;
     border-radius: 8px;
     border: 1px solid var(--border-color);
@@ -402,7 +404,7 @@ section h2::after {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 119, 182, 0.15);
+    box-shadow: 0 8px 16px rgba(47, 52, 58, 0.14);
 }
 
 .project-card h3 {
@@ -463,13 +465,13 @@ section h2::after {
 }
 
 #contact {
-    background: #f9f9f9;
+    background: var(--muted-surface);
 }
 
 .contact-form {
     max-width: 900px;
     margin: 0 auto;
-    background: white;
+    background: var(--surface-color);
     padding: 1.8rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -502,7 +504,7 @@ section h2::after {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--secondary-color);
-    box-shadow: 0 0 5px rgba(0, 180, 216, 0.3);
+    box-shadow: 0 0 5px rgba(107, 114, 128, 0.28);
 }
 
 .submit-btn {
@@ -521,17 +523,11 @@ section h2::after {
 .submit-btn:hover {
     background: var(--secondary-color);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 119, 182, 0.3);
+    box-shadow: 0 4px 8px rgba(47, 52, 58, 0.24);
 }
 
 footer {
-    background-color: var(--primary-color);
-    background-image:
-        linear-gradient(rgba(0, 24, 48, 0.72), rgba(0, 24, 48, 0.72)),
-        url("images/Background.jpg");
-    background-position: center, center;
-    background-size: cover, 85% auto;
-    background-repeat: no-repeat, no-repeat;
+    background: var(--primary-color);
     color: var(--text-light);
     text-align: center;
     padding: 2rem;
@@ -539,7 +535,7 @@ footer {
 }
 
 footer a {
-    color: #e0e0e0;
+    color: #f1f3f5;
     font-weight: 600;
 }
 
@@ -637,6 +633,10 @@ footer a:hover {
     .submit-btn {
         width: 100%;
         text-align: center;
+    }
+
+    footer {
+        padding: 2rem 1rem;
     }
 }
 
