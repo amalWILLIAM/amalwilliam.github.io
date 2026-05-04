@@ -1,6 +1,6 @@
 # Amal William Portfolio
 
-Personal portfolio website for Amal William, built to showcase professional experience, technical skills, education, projects, contact details, and CV access.
+This is my Personal portfolio website, built to showcase professional experience, technical skills, education, projects, contact details, and CV access.
 
 ## Overview
 
