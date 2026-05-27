@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Amal William Portfolio
 
 This is my Personal portfolio website, built to showcase professional experience, technical skills, education, projects, contact details, and CV access.
@@ -64,3 +65,7 @@ Open `index.html` in your browser.
 
 - GitHub: [amalWILLIAM](https://github.com/amalWILLIAM)
 - LinkedIn: [amalwilliam](https://www.linkedin.com/in/amalwilliam)
+=======
+# amalwilliam.github.io
+A personal portfolio website built to showcase my skills, projects, and experience as a developer. Designed with a clean, responsive layout to present my work in a professional and accessible way.
+>>>>>>> b87685470f5d26c7a2317d2d1ccd0e1aab010df2
