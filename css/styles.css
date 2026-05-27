@@ -55,6 +55,7 @@ header.header-hidden {
     transform: translateY(-100%);
 }
 
+/* Hero banner styles */
 .hero-section {
     position: relative;
     min-height: 80vh;
@@ -63,17 +64,12 @@ header.header-hidden {
     justify-content: center;
     padding: 4rem 1.5rem;
     color: var(--text-light);
-    background: linear-gradient(135deg, rgba(47, 52, 58, 0.78) 0%, rgba(31, 41, 51, 0.82) 100%), url('../images/banner.png') center/cover no-repeat;
+    background-image: url('../images/banner.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     overflow: hidden;
-}
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.65));
-    z-index: 0;
 }
 
 .hero-content {
@@ -128,6 +124,8 @@ header.header-hidden {
     transform: translateY(-2px);
     box-shadow: 0 22px 48px rgba(37, 99, 235, 0.28);
 }
+
+.service-card {
     background: var(--surface-color);
     padding: 1.9rem;
     border-radius: 18px;
@@ -221,7 +219,7 @@ header img {
     justify-content: center;
     padding: 3rem 1.5rem 2.5rem;
     color: var(--text-light);
-    background: linear-gradient(135deg, rgba(47, 52, 58, 0.78) 0%, rgba(31, 41, 51, 0.82) 100%), url('../images/banner.png') center/cover no-repeat;
+    background: url('../images/banner.png') center/cover no-repeat;
     overflow: hidden;
 }
 
@@ -917,6 +915,10 @@ footer a:hover {
         scroll-margin-top: 92px;
     }
 
+    .hero-section {
+        background: url('../images/mobile-banner.png') center/cover no-repeat;
+    }
+
     section h2 {
         font-size: 1.45rem;
         margin-bottom: 1.2rem;
@@ -973,6 +975,13 @@ footer a:hover {
     .certificates-grid,
     .project-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-section {
+        background-image: url('../images/mobile-banner.png') !important;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
